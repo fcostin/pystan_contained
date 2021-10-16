@@ -25,9 +25,9 @@ this should trigger the following steps:
 
 1.	docker will build the `pystan.3.9.7.Dockerfile` container image. This will take a while the first time.
 2.	docker will create and run a container named `pystanenv` using the container image
-3.	inside the `pystanenv` container, the command `python3 src/example.py | tee example.log` will be run
+3.	inside the `pystanenv` container, the command `python3 src/example.py` will be run
 4.	`pystan` will build the model defined inside `src/example.py`. This will take a while the first time.
-5.	output from the python script (and docker build) will be written to `example.log`
+5.	output from the python script (and docker build) will be captured to `example.log` - this is due to the rule in the `Makefile`.
 
 ### usage without involving a `Makefile`
 
