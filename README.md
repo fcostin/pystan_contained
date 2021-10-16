@@ -1,7 +1,7 @@
 pystan-contained
 ================
 
-Demo command-line workflow for running pystan scripts inside a container.
+Demo command-line workflow for running [pystan](https://pystan.readthedocs.io/en/latest/) models inside a container.
 
 
 ### pre-reqs
